@@ -1,18 +1,9 @@
 clear all; close all; clc
-a = [1 0; 2 0; 1 1; 0 2];
-% size(a)
-% a'
-% rank(a)
-
-b = [1 0 1 0];
-% a.*b
-% b*a
-% b'*a
-
-c = [2 0; 0 1; 1 1];
-% a*c'
-
-d = [3 4; 2 -3];
-e = [0.1764706 0.2352941; 0.1176471 -0.1764706];
-% d*e
-% e*d
+for ii = 1:10
+    disp(['matrix' num2str(ii) ' = TransitionMatrix()'])
+    disp(['length' num2str(ii) ' = loadTextFile("text_file_name.txt", matrix' num2str(ii) ')'])
+    disp(['arr' num2str(ii) ' = convertTo2D(matrix' num2str(ii) ')'])
+    disp('')
+    disp(['print("----  ARR ' num2str(ii) ' ----")'])
+    %disp(['print('\n'.join([''.join(['{:10}'.format("%.4f" % item) for item in row]) for row in arr1]))'])
+end
